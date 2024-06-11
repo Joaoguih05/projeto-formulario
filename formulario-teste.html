@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+
+<body>
+    <h1><u>Formulário Social</u></h1>
+
+    <p>Seja bem-vindo ao formulário social.<br>
+        Nesse formulário temos como intuito conhecer mais sobre você. </p>
+
+    <p>responda as seguintes <u>perguntas:</u> </p>
+<hr>
+    <form>
+        <!-- utilizar input tex para isso.-->
+        <label for="campo-nome">Nome Social:</label>
+        <input id="campo-nome" type="text" placeholder="Digite seu nome:" required>
+        <br>
+        <br>
+        <!--utilizar input date-->
+        <label for="campo-datanascimento">Data Nascimento:</label>
+        <input id="campo-datanascimento" type="date" placeholder="Data Nascimento:" required>
+        <br>
+        <br>
+        <!--Ulitizar input "email"-->
+        <label for="campo-email">E-mail:  </label>
+        <input id="campo-email" type="email" placeholder="Digite seu e-mail:">
+        <br>
+        <br>
+
+        <label for="campo-naturalidade">Naturalidade:</label>
+        <input id="campo-naturalidade" type="text" placeholder="Digite sua naturalidade:" required>
+
+        <label for="campo-estado">Estado:</label>
+        <input id="campo-estado" type="text" placeholder="Digite seu estado:" required>
+
+
+
+<hr>
+        <h3>Selecione sua orientação sexual:</h3>
+        <!--Ulitizar input RADIO-->
+        <input name="sexo" id="Masculino"  type="radio" value="Masculino" required>
+        <label for="Masculino">Masculino</label>
+
+    
+
+        <input name="sexo" id="Feminino"  type="radio"  value="Feminino" required>
+        <label for="Feminino">Feminino</label>
+
+
+        <input name="sexo" id="Transgênero"  type="radio"   value="Transgênero"required>
+        <label for="Transgênero">Transgênero</label>
+
+<hr>
+        <h3>Como voce se considera:</h3>
+        <!-- para fazer um botão de opções de escolhas. -->
+        <select name="cor"  required>
+            <option value=""    selected disabled>Selecione uma opção:</option>
+            <option value="Branco" >Branco</option>
+            <option value="Negro"   >Negro</option>
+            <option value="Pardo" >Pardo</option>
+            <option value="Indio" >Indio</option>
+            <option value="Amarelo" >Amarelo</option>
+
+
+        </select>
+<hr>   
+        <h3>Quais desses itens você possei:</h3>
+
+        <input name="item1"id="item1" type="checkbox" value="tv">
+        <label for="item1">TV</label>
+
+        <input name="item2"id="item2" type="checkbox" value="Geladeira">
+        <label for="item2">Geladeira</label>
+
+        <input name="item3"id="item3" type="checkbox" value="Fogão">
+        <label for="item3">Fogão</label>
+
+        <input name="item4"id="item4" type="checkbox" value="Computador">
+        <label for="item2">Computador</label>
+<hr>       
+        <br>
+        <br> 
+        <!-- <label for="campo-comentario"><mark>Deixe aqui seu comentário:</mark></label><br> -->
+
+        <textarea placeholder="Deixe aqui seu comentário..." rows="10" cols="35" ></textarea>
+
+
+        <br>
+        <br>
+        <br>
+        <input type="submit" placeholder="Enviar Questionário">
+
+
+    </form>
+</body>
+</html>
+
+        
+    
